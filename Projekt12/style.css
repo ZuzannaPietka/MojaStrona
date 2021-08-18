@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    box-sizing:inherit;
+    text-align:inherit;
+}
+
+body {
+    font-family: 'Abril Fatface';
+    text-decoration: none;
+    display: flex;
+    align-items:stretch;
+    justify-content:center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    
+     
+}
+.tlo {
+    background: url('welcome.png') 
+    no-repeat center center/cover; 
+    position:absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.ladowanie {
+    
+    font-size: 50px;
+    color: #fff;
+}
+
+  
+      .butt
+    {      
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(24, 124, 11);
+    font-family: 'Abril Fatface' !important;
+    text-transform: lowercase;
+    width: auto;
+    text-align: center;
+    padding: 15px 20px;
+    background: #ffffff;
+    border: 1px dotted #e1f1d9;
+    font-weight: 700;
+}
+
+    
+.butt:hover{color:#197910 !important;background:#fafd45;cursor:pointer}
+
+.butt span{font-size:18px;line-height:12px}
+    
+    .butt:focus
+    {
+        outline: 0;
+
+    }    
+      
+.okno {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+      }
+      .okno-pop {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(217, 255, 212, 0.685);
+        padding: 30px 120px;
+        width: 24rem;
+        border-radius: 0.5rem;
+      }
+      .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align:center;
+        cursor: pointer;
+        border-radius: 1px;
+        background-color: lightgray;
+      }
+      
+      .show-okno {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+      }
+	
+
+  
